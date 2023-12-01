@@ -69,7 +69,7 @@ def enroll_and_save_name():
     cv2.destroyAllWindows()
 
 
-# Functions from Prompt 2
+# Functions from Part 2
 def load_enrolled_data():
     enrolled_data = []
     try:
@@ -173,7 +173,7 @@ label2.place(x=820, y=200)
 # Rest of the code for UI creation, buttons, labels, etc.
 
 
-# Enroll Button (Triggering Function from Prompt 1)
+# Enroll Button (Triggering Function from Part 1)
 enroll_button = tk.Button(
     window,
     text="Enroll New Person",
@@ -187,7 +187,7 @@ enroll_button = tk.Button(
 )
 enroll_button.place(x=200, y=450)
 
-# Mark Attendance Button (Triggering Function from Prompt 2)
+# Mark Attendance Button (Triggering Function from Part 2)
 def mark_attendance_ui():
     video_capture = cv2.VideoCapture(0)
     known_faces_data = load_enrolled_data()
@@ -255,7 +255,7 @@ def mark_attendance_ui():
     f.close()
 
 
-# Mark Attendance Button (Triggering Function from Prompt 2)
+# Mark Attendance Button (Triggering Function from Part 2)
 mark_attendance_button = tk.Button(
     window,
     text="Mark Attendance",
